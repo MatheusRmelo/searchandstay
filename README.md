@@ -30,7 +30,7 @@ depois rode as migrations<br />
 `docker exec app php artisan migrate --force` <br />
 OBS: --force é para rodar mesmo se env tiver para produção
 
-Depois acesse a url **http://localhost** e pronto você já tem acesso ao sistema
+Depois consume as rotas da api em  **http://localhost/api**
 
 # Rodando local
 Execute as migrations `php artisan migrate`<br />
