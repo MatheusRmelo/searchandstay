@@ -4,6 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\BookStore\StoreRequest;
+use App\Http\Requests\BookStore\UpdateRequest;
 use App\Models\BookStore;
 use App\Traits\ApiResponse;
 use Illuminate\Http\Request;
@@ -44,7 +45,7 @@ class BookStoreController extends Controller
         return response()->noContent();
     }
 
-    public function update(Request $request)
+    public function update(UpdateRequest $request)
     {
         $bookStore = BookStore::find($request->book_store);
         if(!$bookStore){

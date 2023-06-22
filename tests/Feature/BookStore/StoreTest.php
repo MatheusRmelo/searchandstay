@@ -92,6 +92,16 @@ class StoreTest extends TestCase
                 'isbn' => 9783161484100,
                 'value' => 'eqewq',
             ]],
+            'isbn-short' => [[
+                'name' => 'Book Test 1',
+                'isbn' => 978316148,
+                'value' => 30.99,
+            ]],
+            'isbn-bigger' => [[
+                'name' => 'Book Test 1',
+                'isbn' => 97831614841001,
+                'value' => 30.99,
+            ]],
         ];
     }
 }

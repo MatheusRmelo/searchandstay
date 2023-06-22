@@ -52,15 +52,14 @@ class UpdateTest extends TestCase
         return [
             'complete' => [[
                 'name' => 'Book Test Update',
-                'isbn' => 97831614842120,
+                'isbn' => 9783161484100,
                 'value' => 99.99,
             ]],
             'only-name' => [[
                 'name' => 'Book Test Update',
             ]],
             'only-isbn' => [[
-                'isbn' => 97831614842120,
-                'value' => 99.99,
+                'isbn' => 9783161484100,
             ]],
             'only-value' => [[
                 'value' => 99.99,
@@ -80,6 +79,16 @@ class UpdateTest extends TestCase
                 'name' => 'Book Test 1',
                 'isbn' => 9783161484100,
                 'value' => 'eqewq',
+            ]],
+            'isbn-short' => [[
+                'name' => 'Book Test 1',
+                'isbn' => 978316148,
+                'value' => 30.99,
+            ]],
+            'isbn-bigger' => [[
+                'name' => 'Book Test 1',
+                'isbn' => 97831614841001,
+                'value' => 30.99,
             ]],
         ];
     }

@@ -27,7 +27,14 @@ class GetTest extends TestCase
     public function testFindAll()
     {
         $this->get('/api/book-stores')
-        ->assertStatus(200);
+        ->assertStatus(200)->assertJsonStructure([
+            'result' => [
+                'current_page',
+                'data',
+                'per_page',
+                'total',
+            ]
+        ]);
     }
 
     public function testFindById()

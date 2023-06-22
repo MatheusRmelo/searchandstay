@@ -16,7 +16,7 @@ class UpdateRequest extends FormRequest
     {
         return [
             'name' => 'string',
-            'isbn' => 'integer',
+            'isbn' => 'integer|digits_between:10,13',
             'value' => 'numeric',
         ];
     }

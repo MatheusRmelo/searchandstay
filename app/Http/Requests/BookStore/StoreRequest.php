@@ -15,7 +15,7 @@ class StoreRequest extends FormRequest
     {
         return [
             'name' => 'required|string',
-            'isbn' => 'required|integer',
+            'isbn' => 'required|digits_between:10,13',
             'value' => 'required|numeric',
         ];
     }
